@@ -8,6 +8,9 @@ header {
     height: 480px;
     text-align: center;
 }
+.titleBefore {
+    display: inline;
+}
 @keyframes spin {
     100% { transform: rotate(360deg); }
 }
@@ -20,17 +23,17 @@ header {
 @-o-keyframes spin {
     100% { -o-transform: rotate(360deg); }
 }
-#titleBefore {
-    animation: spin 0.5s linear;
-    -moz-animation: spin 0.5s linear;
-    -webkit-animation: spin 0.5s linear;
-    -o-animation: spin 0.5s linear;
+#B {
+    animation: spin 0.5s linear infinite;
+    -moz-animation: spin 0.5s linear infinite;
+    -webkit-animation: spin 0.5s linear infinite;
+    -o-animation: spin 0.5s linear infinite;
     -webkit-animation-play-state: paused;
     -o-animation-play-state: paused;
     -moz-animation-play-state: paused;
     animation-play-state: paused;
 }
-#titleBefore:hover {
+#B:hover {
     -webkit-animation-play-state: running;
     -o-animation-play-state: running;
     -moz-animation-play-state: running;
